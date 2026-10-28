@@ -5,6 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Rithwik Manjunath Portfolio</title>
 <meta name="description" content="Candidate due diligence file: Rithwik Manjunath, fraud, KYC and AML investigator turned data analyst, Dublin.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://rithwik23m.github.io/">
+<meta property="og:title" content="Candidate Due Diligence File: Rithwik Manjunath">
+<meta property="og:description" content="Fraud, KYC and AML investigator turned data analyst. Four screening hits, four exhibits, one decision.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=JetBrains+Mono:wght@400;500;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
@@ -220,6 +224,7 @@ h2 {
 .exhibit h3 { font-family: var(--font-display); font-stretch: 75%; font-weight: 800; text-transform: uppercase; font-size: 28px; line-height: 1; margin: 0; }
 .exhibit p { margin: 0; font-size: 16.5px; }
 .exhibit .stack { display: flex; flex-wrap: wrap; gap: 6px; }
+.exhibit .code { font-family: var(--font-mono); font-size: 12px; color: var(--stamp); word-break: break-all; }
 .exhibit .stack span { font-family: var(--font-mono); font-size: 11.5px; background: var(--paper); padding: 2px 8px; }
 
 /* skills */
@@ -351,7 +356,7 @@ h2 {
         <div class="findings">
           <div class="finding"><span class="n">A</span><p><strong>Has worked the case queue himself.</strong> Investigated flagged orders, payments and accounts in Amazon's Transaction Risk Management Services, then 80 to 90 KYC, AML and onboarding cases a day across three regions.</p></div>
           <div class="finding"><span class="n">B</span><p><strong>Fixes the process, not just the case.</strong> Spent 8 months co-designing an onboarding decision tool that went live across the organisation, and rewrote the SOPs that were causing errors.</p></div>
-          <div class="finding"><span class="n">C</span><p><strong>Brings the analytics with him.</strong> MSc in Data Analytics, Microsoft Certified Fabric Analytics Engineer, and he uses Looker forecasting every week to run a restaurant's numbers.</p></div>
+          <div class="finding"><span class="n">C</span><p><strong>Brings the analytics with him.</strong> MSc in Data Analytics, Microsoft Certified Fabric Analytics Engineer, and he uses Looker forecasting every week to run a restaurant's numbers. In his own time he built AlertIQ, an AML alert triage engine.</p></div>
         </div>
       </section>
 
@@ -421,19 +426,34 @@ h2 {
       </section>
 
       <section class="part" id="evidence">
-        <div class="part-head"><span class="no">04</span><h2>Supporting evidence</h2><span class="label">Built in his own time</span></div>
+        <div class="part-head"><span class="no">04</span><h2>Supporting evidence</h2><span class="label">Built in his own time · synthetic data</span></div>
         <div class="evidence">
           <div class="exhibit">
-            <div class="label"><span>Exhibit A</span><span>Fraud tooling</span></div>
-            <h3>TrustScan</h3>
-            <p>A fraud and scam detection web app built on the Claude API with live web search. It researches what you submit and returns a risk assessment with the evidence behind it.</p>
-            <div class="stack"><span>Claude API</span><span>Web search</span><span>Risk scoring</span></div>
+            <div class="label"><span>Exhibit A</span><span>AML triage</span></div>
+            <h3>AlertIQ</h3>
+            <p>An AML alert triage engine and investigation workspace. It ranks alerts by their likelihood of becoming a SAR. On held-out synthetic data, reviewing the top 20% of the queue caught 100% of true SARs, against 20% for random order (AUC-ROC 0.979).</p>
+            <div class="stack"><span>Python</span><span>Gradient boosting</span><span>Next.js</span><span>Cloud Run</span><span>663 tests</span></div>
+            <a class="code" href="https://github.com/Rithwik23M/AlertIQ">github.com/Rithwik23M/AlertIQ</a>
           </div>
           <div class="exhibit">
-            <div class="label"><span>Exhibit B</span><span>Quant analysis</span></div>
-            <h3>CryptoBacktest Dashboard</h3>
-            <p>A Python dashboard for backtesting crypto trading strategies, such as EMA crossovers, against historical market data.</p>
-            <div class="stack"><span>Python</span><span>Backtesting</span><span>Market data</span></div>
+            <div class="label"><span>Exhibit B</span><span>Fraud scoring · in progress</span></div>
+            <h3>Fraud Risk Scoring</h3>
+            <p>A model that scores mobile payment transactions by fraud risk and prioritises the analyst review queue, built on about 6.3 million PaySim transactions with a fraud rate under 0.2%.</p>
+            <div class="stack"><span>scikit-learn</span><span>SHAP</span><span>SQL</span><span>Power BI</span></div>
+            <a class="code" href="https://github.com/Rithwik23M/fraud-risk-scoring">github.com/Rithwik23M/fraud-risk-scoring</a>
+          </div>
+          <div class="exhibit">
+            <div class="label"><span>Exhibit C</span><span>Security risk · in progress</span></div>
+            <h3>HarbourPay Risk Assessment</h3>
+            <p>A security risk assessment for a fictional Irish payments startup facing a partner-bank due diligence review, replacing gut-feel priorities with a scored risk register tied to a STRIDE threat model and a NIST CSF 2.0 gap analysis.</p>
+            <div class="stack"><span>NIST CSF 2.0</span><span>STRIDE</span><span>Python CI checks</span></div>
+            <a class="code" href="https://github.com/Rithwik23M/harbourpay-security-risk-assessment">github.com/Rithwik23M/harbourpay-security-risk-assessment</a>
+          </div>
+          <div class="exhibit">
+            <div class="label"><span>Exhibit D</span><span>Google Cybersecurity</span></div>
+            <h3>Security Audit &amp; Incident Report</h3>
+            <p>Two graded course activities, both scored 100%: a controls and compliance audit of a fictional toy company against PCI DSS, GDPR and SOC, and an ICMP flood incident report written up using the NIST Cybersecurity Framework.</p>
+            <div class="stack"><span>PCI DSS</span><span>GDPR</span><span>NIST CSF</span></div>
           </div>
         </div>
       </section>
@@ -441,7 +461,7 @@ h2 {
       <section class="part" id="capabilities">
         <div class="part-head"><span class="no">05</span><h2>Capabilities</h2></div>
         <div class="skills">
-          <div><h3>Financial crime</h3><ul><li>AML &amp; KYC / CDD</li><li>Enhanced Due Diligence</li><li>Sanctions &amp; PEP screening</li><li>Fraud detection</li><li>UBO verification</li></ul></div>
+          <div><h3>Financial crime</h3><ul><li>AML &amp; KYC / CDD</li><li>Enhanced Due Diligence</li><li>Sanctions &amp; PEP screening</li><li>Fraud detection</li><li>UBO verification</li><li>NIST CSF &amp; security audits</li></ul></div>
           <div><h3>Data</h3><ul><li>SQL</li><li>Python</li><li>Power BI</li><li>Looker &amp; Tableau</li><li>Microsoft Fabric</li></ul></div>
           <div><h3>Process</h3><ul><li>Requirements &amp; UAT</li><li>SOP writing</li><li>Quality auditing</li><li>KPI reporting</li><li>Forecasting</li></ul></div>
         </div>
@@ -451,6 +471,7 @@ h2 {
         <div class="part-head"><span class="no">06</span><h2>Documents on file</h2><span class="label">Education &amp; certification</span></div>
         <div class="docs">
           <div class="doc"><span class="t">Fabric Analytics Engineer Associate (DP-600)<span class="by">Microsoft</span></span><span class="yr">2026</span><span class="ok">✓ Certified</span></div>
+          <div class="doc"><span class="t">Google Cybersecurity Professional Certificate<span class="by">Google · 4 of 8 courses complete</span></span><span class="yr">2026</span><span class="ok" style="color:var(--flag)">In progress</span></div>
           <div class="doc"><span class="t">Operational Analysis of Suspicious Transaction Reports<span class="by">Basel Institute on Governance</span></span><span class="yr">2026</span><span class="ok">✓ Completed</span></div>
           <div class="doc"><span class="t">Azure Fundamentals (AZ-900)<span class="by">DataCamp</span></span><span class="yr">2026</span><span class="ok">✓ Completed</span></div>
           <div class="doc"><span class="t">Business Analysis &amp; Process Management<span class="by">Coursera</span></span><span class="yr">2026</span><span class="ok">✓ Completed</span></div>
