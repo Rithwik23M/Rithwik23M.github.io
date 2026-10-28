@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rithwik Manjunath Portfolio</title>
+<meta name="description" content="Candidate due diligence file: Rithwik Manjunath, fraud, KYC and AML investigator turned data analyst, Dublin.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=JetBrains+Mono:wght@400;500;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<style>
+:root {
+  /* Layout: a compliance case file. Sticky file index on the left, findings on the right, one rubber stamp as the only loud element. */
+  --paper: #eceeeb;
+  --sheet: #f8f9f6;
+  --ink: #0f1417;
+  --muted: #5b6468;
+  --rule: #c9ceca;
+  --stamp: #17714a;
+  --flag: #b4261a;
+  --font-display: "Archivo", "Arial Narrow", Arial, sans-serif;
+  --font-body: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-mono: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--stamp); outline-offset: 3px; }
+
+.mono { font-family: var(--font-mono); }
+.label {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* ---------- top strip ---------- */
+.strip {
+  background: var(--ink);
+  color: #dfe4e1;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.strip .in {
+  max-width: 1180px; margin: 0 auto; padding: 10px 24px;
+  display: flex; flex-wrap: wrap; gap: 6px 28px; justify-content: space-between;
+}
+.strip b { color: #fff; font-weight: 700; }
+.dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: #3fcf8e; margin-right: 8px; vertical-align: 1px; box-shadow: 0 0 0 3px rgba(63,207,142,.2); }
+
+/* ---------- sheet ---------- */
+.sheet {
+  max-width: 1180px;
+  margin: 28px auto 64px;
+  background: var(--sheet);
+  border: 1px solid var(--rule);
+  box-shadow: 0 1px 0 #fff inset, 0 24px 60px -30px rgba(15,20,23,.35);
+}
+
+/* ---------- hero ---------- */
+.hero {
+  position: relative;
+  padding: 44px 48px 40px;
+  border-bottom: 2px solid var(--ink);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  gap: 48px;
+  overflow: hidden;
+}
+.hero .ref { display: flex; flex-wrap: wrap; gap: 6px 22px; margin-bottom: 26px; }
+h1 {
+  font-family: var(--font-display);
+  font-stretch: 62%;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: clamp(60px, 10.5vw, 150px);
+  overflow-wrap: anywhere;
+  line-height: 0.84;
+  letter-spacing: -0.01em;
+  margin: 0 0 26px;
+}
+h1 span { display: block; }
+h1 .last { color: transparent; -webkit-text-stroke: 2px var(--ink); }
+.thesis {
+  font-size: clamp(20px, 2.2vw, 25px);
+  line-height: 1.38;
+  max-width: 30ch;
+  margin: 0;
+}
+.thesis em { font-style: normal; background: linear-gradient(transparent 62%, rgba(23,113,74,.22) 62%); }
+
+.kv {
+  align-self: end;
+  display: grid;
+  gap: 0;
+  border-top: 1px solid var(--ink);
+}
+.kv div { display: grid; grid-template-columns: 112px 1fr; gap: 10px; padding: 10px 0; border-bottom: 1px solid var(--rule); font-size: 15px; line-height: 1.4; }
+.kv dt { margin: 0; }
+.kv dd { margin: 0; font-family: var(--font-mono); font-size: 13px; }
+
+.risk { margin-top: 18px; }
+.risk-row { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px; }
+.risk-row strong { font-family: var(--font-display); font-stretch: 100%; font-weight: 800; font-size: 15px; letter-spacing: .06em; color: var(--stamp); }
+.meter { height: 10px; background: repeating-linear-gradient(90deg, var(--rule) 0 2px, transparent 2px 10%); border: 1px solid var(--ink); position: relative; }
+.meter i { position: absolute; inset: 0 auto 0 0; width: 9%; background: var(--stamp); animation: fill 1s .9s cubic-bezier(.2,.8,.2,1) both; }
+.meter-scale { display: flex; justify-content: space-between; margin-top: 4px; }
+@keyframes fill { from { width: 2%; } to { width: 9%; } }
+
+/* the one loud thing */
+.stamp {
+  position: absolute;
+  left: min(560px, 52%); bottom: 52px;
+  transform: rotate(-11deg);
+  border: 4px solid var(--stamp);
+  color: var(--stamp);
+  padding: 10px 16px 8px;
+  font-family: var(--font-display);
+  font-stretch: 85%;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 0.95;
+  border-radius: 6px;
+  mix-blend-mode: multiply;
+  opacity: .9;
+  animation: slam .45s .35s cubic-bezier(.3,1.6,.5,1) both;
+  pointer-events: none;
+  -webkit-mask-image: radial-gradient(circle at 30% 40%, #000 55%, rgba(0,0,0,.75) 70%, #000 85%);
+          mask-image: radial-gradient(circle at 30% 40%, #000 55%, rgba(0,0,0,.75) 70%, #000 85%);
+}
+.stamp b { display: block; font-size: 34px; letter-spacing: .04em; }
+.stamp small { display: block; font-family: var(--font-mono); font-weight: 700; font-size: 10.5px; letter-spacing: .18em; margin-top: 4px; }
+@keyframes slam {
+  from { transform: rotate(-11deg) scale(1.9); opacity: .25; }
+  to { transform: rotate(-11deg) scale(1); opacity: .9; }
+}
+
+/* ---------- body layout ---------- */
+.file { display: grid; grid-template-columns: 220px minmax(0, 1fr); }
+.index {
+  border-right: 1px solid var(--rule);
+  padding: 32px 0 32px 32px;
+}
+.index nav { position: sticky; top: 24px; display: grid; gap: 2px; }
+.index a {
+  display: grid; grid-template-columns: 30px 1fr; align-items: baseline;
+  text-decoration: none; padding: 7px 14px 7px 0;
+  font-family: var(--font-display); font-stretch: 100%; font-weight: 600; font-size: 14.5px;
+  color: var(--muted);
+  border-right: 3px solid transparent;
+}
+.index a span { font-family: var(--font-mono); font-size: 11px; font-weight: 500; }
+.index a:hover { color: var(--ink); border-right-color: var(--ink); }
+
+.content { display: grid; }
+section.part { padding: 40px 48px 44px; border-bottom: 1px solid var(--rule); }
+section.part:last-child { border-bottom: 0; }
+.part-head { display: flex; align-items: baseline; gap: 16px; margin-bottom: 22px; flex-wrap: wrap; }
+.part-head .no { font-family: var(--font-mono); font-size: 13px; color: var(--flag); font-weight: 700; }
+h2 {
+  font-family: var(--font-display);
+  font-stretch: 75%;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 34px;
+  line-height: 1;
+  letter-spacing: .01em;
+  margin: 0;
+}
+.part-head .label { margin-left: auto; }
+
+/* findings */
+.findings { display: grid; gap: 0; counter-reset: f; }
+.finding { display: grid; grid-template-columns: 56px minmax(0, 1fr); gap: 16px; padding: 16px 0; border-top: 1px solid var(--rule); }
+.finding:first-child { border-top: 0; padding-top: 0; }
+.finding .n { font-family: var(--font-display); font-stretch: 62%; font-weight: 900; font-size: 44px; line-height: .9; color: var(--rule); }
+.finding p { margin: 0; max-width: 62ch; }
+.finding strong { font-weight: 600; }
+
+/* hits */
+.hits { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border: 1px solid var(--ink); }
+.hit { padding: 18px 18px 16px; border-right: 1px solid var(--rule); display: grid; gap: 8px; align-content: start; }
+.hit:last-child { border-right: 0; }
+.hit .tagline { display: flex; justify-content: space-between; }
+.hit .tagline .sev { color: var(--stamp); font-weight: 700; }
+.hit b { font-family: var(--font-display); font-stretch: 62%; font-weight: 900; font-size: 58px; line-height: .9; font-variant-numeric: tabular-nums; }
+.hit p { margin: 0; font-size: 15px; line-height: 1.45; color: var(--muted); }
+
+/* ledger */
+.ledger { display: grid; }
+.entry { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 24px; padding: 22px 0; border-top: 1px solid var(--rule); }
+.entry:first-child { border-top: 2px solid var(--ink); }
+.entry .when { font-family: var(--font-mono); font-size: 12.5px; line-height: 1.5; color: var(--muted); font-variant-numeric: tabular-nums; }
+.entry .when b { display: block; color: var(--ink); font-weight: 700; }
+.entry h3 { font-family: var(--font-display); font-stretch: 100%; font-weight: 700; font-size: 21px; line-height: 1.2; margin: 0 0 2px; }
+.entry .org { font-family: var(--font-mono); font-size: 12.5px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
+.entry ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 7px; }
+.entry li { position: relative; padding-left: 20px; max-width: 64ch; font-size: 17px; }
+.entry li::before { content: ""; position: absolute; left: 2px; top: .7em; width: 8px; height: 2px; background: var(--ink); }
+.entry .chip { display: inline-block; font-family: var(--font-mono); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; border: 1px solid var(--ink); padding: 1px 7px; margin-left: 8px; vertical-align: 3px; }
+
+/* evidence */
+.evidence { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.exhibit { border: 1px solid var(--ink); padding: 20px 22px 18px; display: grid; gap: 10px; align-content: start; position: relative; background: #fff; }
+.exhibit .label { display: flex; justify-content: space-between; }
+.exhibit h3 { font-family: var(--font-display); font-stretch: 75%; font-weight: 800; text-transform: uppercase; font-size: 28px; line-height: 1; margin: 0; }
+.exhibit p { margin: 0; font-size: 16.5px; }
+.exhibit .stack { display: flex; flex-wrap: wrap; gap: 6px; }
+.exhibit .stack span { font-family: var(--font-mono); font-size: 11.5px; background: var(--paper); padding: 2px 8px; }
+
+/* skills */
+.skills { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; }
+.skills h3 { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); font-weight: 500; margin: 0 0 10px; padding-bottom: 8px; border-bottom: 1px solid var(--ink); }
+.skills ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 4px; font-size: 16.5px; }
+
+/* documents */
+.docs { display: grid; border-top: 2px solid var(--ink); }
+.doc { display: grid; grid-template-columns: minmax(0, 1fr) auto 96px; gap: 16px; align-items: baseline; padding: 12px 0; border-bottom: 1px solid var(--rule); }
+.doc .t { font-weight: 600; font-size: 17px; line-height: 1.35; }
+.doc .by { display: block; font-weight: 400; font-size: 15px; color: var(--muted); }
+.doc .yr { font-family: var(--font-mono); font-size: 12.5px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.doc .ok { font-family: var(--font-mono); font-size: 11px; font-weight: 700; letter-spacing: .12em; color: var(--stamp); text-align: right; }
+
+/* decision */
+.decision { background: var(--ink); color: #eef1ee; padding: 48px; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 32px; align-items: end; }
+.decision .label { color: #9aa6a1; }
+.decision h2 { color: #fff; font-size: clamp(44px, 6vw, 76px); font-stretch: 62%; font-weight: 900; margin: 12px 0 14px; }
+.decision h2 span { color: #4fd398; }
+.decision p { margin: 0; max-width: 46ch; color: #c9d1cd; font-size: 17px; }
+.actions { display: grid; gap: 10px; min-width: 270px; }
+.btn {
+  display: flex; justify-content: space-between; align-items: center; gap: 18px;
+  font-family: var(--font-display); font-stretch: 100%; font-weight: 700; font-size: 16px;
+  padding: 15px 18px; text-decoration: none; border: 1px solid #eef1ee; color: #eef1ee; background: transparent; cursor: pointer;
+  transition: background .15s, color .15s;
+}
+.btn.primary { background: #4fd398; border-color: #4fd398; color: var(--ink); }
+.btn:hover { background: #eef1ee; color: var(--ink); }
+.btn .k { font-family: var(--font-mono); font-size: 12px; font-weight: 500; }
+.small-print { padding: 16px 48px 22px; display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; border-top: 1px solid var(--rule); }
+
+/* ---------- responsive ---------- */
+@media (max-width: 980px) {
+  .hero { grid-template-columns: minmax(0, 1fr); padding: 36px 28px; }
+  .stamp { left: auto; right: 28px; top: 64px; bottom: auto; }
+  .file { grid-template-columns: 1fr; }
+  .index { display: none; }
+  section.part { padding: 34px 28px; }
+  .hits { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .hit:nth-child(2) { border-right: 0; }
+  .hit:nth-child(-n+2) { border-bottom: 1px solid var(--rule); }
+  .decision { grid-template-columns: 1fr; padding: 36px 28px; }
+  .small-print { padding: 16px 28px 22px; }
+}
+@media (max-width: 620px) {
+  body { font-size: 17px; }
+  .sheet { margin: 0 0 32px; border-left: 0; border-right: 0; }
+  .hero { padding: 28px 18px; }
+  .stamp { position: relative; right: auto; top: auto; display: inline-block; justify-self: start; margin: -10px 0 0 6px; order: 2; }
+  .hero > div:first-child { order: 1; }
+  .hero > aside { order: 3; }
+  .stamp b { font-size: 26px; }
+  h1 .last { -webkit-text-stroke-width: 1.5px; }
+  section.part { padding: 30px 18px; }
+  .part-head .label { margin-left: 0; width: 100%; }
+  .entry { grid-template-columns: 1fr; gap: 6px; }
+  .evidence, .skills { grid-template-columns: 1fr; }
+  .doc { grid-template-columns: 1fr auto; }
+  .doc .ok { grid-column: 2; grid-row: 1; }
+  .doc .yr { grid-column: 1; }
+  .decision { padding: 30px 18px; }
+  .actions { min-width: 0; }
+  .small-print { padding: 14px 18px 20px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .stamp, .meter i { animation: none; }
+}
+</style>
+</head>
+<body>
+
+<div class="strip" role="banner">
+  <div class="in">
+    <span><span class="dot"></span><b>Open to roles</b> · Dublin, Ireland</span>
+    <span>Candidate due diligence file · Ref RM-DUB-01</span>
+    <span>Prepared by the subject</span>
+  </div>
+</div>
+
+<article class="sheet">
+
+  <header class="hero">
+    <div>
+      <div class="ref label">
+        <span>Subject</span><span>Fraud · KYC · AML · Data</span>
+      </div>
+      <h1><span>Rithwik</span><span class="last">Manjunath</span></h1>
+      <p class="thesis">I spent three years at Amazon deciding who was safe to let in. <em>Now I do it with data.</em></p>
+    </div>
+
+    <aside>
+      <dl class="kv">
+        <div><dt class="label">Base</dt><dd>Dublin, Ireland</dd></div>
+        <div><dt class="label">Track record</dt><dd>3+ yrs fraud &amp; compliance, Amazon</dd></div>
+        <div><dt class="label">Now</dt><dd>Ops &amp; performance analytics, Nando's</dd></div>
+        <div><dt class="label">Tooling</dt><dd>SQL · Python · Power BI · Looker · Fabric</dd></div>
+        <div><dt class="label">Targeting</dt><dd>Fintech · Banking · Trust &amp; Safety</dd></div>
+      </dl>
+      <div class="risk" aria-label="Hiring risk rating: low">
+        <div class="risk-row"><span class="label">Hiring risk rating</span><strong>LOW</strong></div>
+        <div class="meter"><i></i></div>
+        <div class="meter-scale label"><span>Low</span><span>High</span></div>
+      </div>
+    </aside>
+
+    <div class="stamp" aria-hidden="true"><b>Cleared</b><small>Recommend: connect</small></div>
+  </header>
+
+  <div class="file">
+    <aside class="index" aria-label="File index">
+      <nav>
+        <span class="label" style="padding: 0 0 10px;">File index</span>
+        <a href="#findings"><span>01</span>Findings</a>
+        <a href="#hits"><span>02</span>Screening hits</a>
+        <a href="#history"><span>03</span>Activity history</a>
+        <a href="#evidence"><span>04</span>Evidence</a>
+        <a href="#capabilities"><span>05</span>Capabilities</a>
+        <a href="#documents"><span>06</span>Documents</a>
+        <a href="#decision"><span>07</span>Decision</a>
+      </nav>
+    </aside>
+
+    <div class="content">
+
+      <section class="part" id="findings">
+        <div class="part-head"><span class="no">01</span><h2>Summary of findings</h2><span class="label">Reviewed by: you</span></div>
+        <div class="findings">
+          <div class="finding"><span class="n">A</span><p><strong>Has worked the case queue himself.</strong> Investigated flagged orders, payments and accounts in Amazon's Transaction Risk Management Services, then 80 to 90 KYC, AML and onboarding cases a day across three regions.</p></div>
+          <div class="finding"><span class="n">B</span><p><strong>Fixes the process, not just the case.</strong> Spent 8 months co-designing an onboarding decision tool that went live across the organisation, and rewrote the SOPs that were causing errors.</p></div>
+          <div class="finding"><span class="n">C</span><p><strong>Brings the analytics with him.</strong> MSc in Data Analytics, Microsoft Certified Fabric Analytics Engineer, and he uses Looker forecasting every week to run a restaurant's numbers.</p></div>
+        </div>
+      </section>
+
+      <section class="part" id="hits">
+        <div class="part-head"><span class="no">02</span><h2>Screening hits</h2><span class="label">4 positive matches</span></div>
+        <div class="hits">
+          <div class="hit"><div class="tagline label"><span>Hit 01</span><span class="sev">Volume</span></div><b>80–90</b><p>KYC, AML and onboarding cases closed per day at Amazon</p></div>
+          <div class="hit"><div class="tagline label"><span>Hit 02</span><span class="sev">Accuracy</span></div><b>+25%</b><p>Improvement in fraud detection accuracy from spotting risk patterns</p></div>
+          <div class="hit"><div class="tagline label"><span>Hit 03</span><span class="sev">Consistency</span></div><b>6/6</b><p>Months in a row as the team's top performer</p></div>
+          <div class="hit"><div class="tagline label"><span>Hit 04</span><span class="sev">Data</span></div><b>−15%</b><p>Stock variance at Nando's through forecast-led ordering</p></div>
+        </div>
+      </section>
+
+      <section class="part" id="history">
+        <div class="part-head"><span class="no">03</span><h2>Activity history</h2><span class="label">Most recent first</span></div>
+        <div class="ledger">
+          <div class="entry">
+            <div class="when"><b>Sep 2025</b>to present<br>Dublin</div>
+            <div>
+              <h3>Operations &amp; Performance Analyst</h3>
+              <div class="org">Nando's UK &amp; IRE</div>
+              <ul>
+                <li>Reviews sales, labour cost, stock variance, NPS and kitchen throughput in Looker daily and weekly, and traces red metrics to a root cause.</li>
+                <li>Uses Looker forecasts and rolling sales history to plan labour and stock, cutting stock variance by 15%.</li>
+                <li>Reports actuals against budget to the Regional Manager every week, with variance commentary and next actions.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="entry">
+            <div class="when"><b>Aug 2023</b>to Sep 2025<br>Dublin</div>
+            <div>
+              <h3>Supervisor</h3>
+              <div class="org">Nando's UK &amp; IRE</div>
+              <ul>
+                <li>Ran shifts across front of house and kitchen, using live station KPIs to fix problems as they happened.</li>
+                <li>Main escalation point for complaints, keeping NPS at 62 to 65 and Food Scores above 80.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="entry">
+            <div class="when"><b>Mar 2020</b>to Dec 2022<br>Bengaluru</div>
+            <div>
+              <h3>Registration &amp; Compliance Operations Analyst<span class="chip">SME</span></h3>
+              <div class="org">Amazon</div>
+              <ul>
+                <li>80 to 90 KYC, AML and seller onboarding cases a day across North America, Europe and Asia-Pacific, from triage to final decision.</li>
+                <li>Enhanced Due Diligence on high-risk merchants, business and UBO verification, and sanctions and PEP screening reviews.</li>
+                <li>Owned the Amazon Payments onboarding queue for MTurk and NAAPAY.</li>
+                <li>Co-designed an onboarding decision tool over 8 months: requirements, UAT and defect tracking with engineers until it went live organisation-wide.</li>
+                <li>Subject Matter Expert for the RCO BAP process: rebuilt training, audited case quality and rewrote SOPs.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="entry">
+            <div class="when"><b>Sep 2019</b>to Mar 2020<br>Bengaluru</div>
+            <div>
+              <h3>Transaction Risk Investigator</h3>
+              <div class="org">Amazon · Transaction Risk Management Services</div>
+              <ul>
+                <li>Investigated orders, payments and accounts flagged by risk models, including account takeover, stolen cards and links to closed fraudulent accounts.</li>
+                <li>Escalated emerging fraud patterns with case examples so risk rules could be updated.</li>
+                <li>Contacted buyers and sellers for verification documents before reinstating or closing accounts.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="part" id="evidence">
+        <div class="part-head"><span class="no">04</span><h2>Supporting evidence</h2><span class="label">Built in his own time</span></div>
+        <div class="evidence">
+          <div class="exhibit">
+            <div class="label"><span>Exhibit A</span><span>Fraud tooling</span></div>
+            <h3>TrustScan</h3>
+            <p>A fraud and scam detection web app built on the Claude API with live web search. It researches what you submit and returns a risk assessment with the evidence behind it.</p>
+            <div class="stack"><span>Claude API</span><span>Web search</span><span>Risk scoring</span></div>
+          </div>
+          <div class="exhibit">
+            <div class="label"><span>Exhibit B</span><span>Quant analysis</span></div>
+            <h3>CryptoBacktest Dashboard</h3>
+            <p>A Python dashboard for backtesting crypto trading strategies, such as EMA crossovers, against historical market data.</p>
+            <div class="stack"><span>Python</span><span>Backtesting</span><span>Market data</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="part" id="capabilities">
+        <div class="part-head"><span class="no">05</span><h2>Capabilities</h2></div>
+        <div class="skills">
+          <div><h3>Financial crime</h3><ul><li>AML &amp; KYC / CDD</li><li>Enhanced Due Diligence</li><li>Sanctions &amp; PEP screening</li><li>Fraud detection</li><li>UBO verification</li></ul></div>
+          <div><h3>Data</h3><ul><li>SQL</li><li>Python</li><li>Power BI</li><li>Looker &amp; Tableau</li><li>Microsoft Fabric</li></ul></div>
+          <div><h3>Process</h3><ul><li>Requirements &amp; UAT</li><li>SOP writing</li><li>Quality auditing</li><li>KPI reporting</li><li>Forecasting</li></ul></div>
+        </div>
+      </section>
+
+      <section class="part" id="documents">
+        <div class="part-head"><span class="no">06</span><h2>Documents on file</h2><span class="label">Education &amp; certification</span></div>
+        <div class="docs">
+          <div class="doc"><span class="t">Fabric Analytics Engineer Associate (DP-600)<span class="by">Microsoft</span></span><span class="yr">2026</span><span class="ok">✓ Certified</span></div>
+          <div class="doc"><span class="t">Operational Analysis of Suspicious Transaction Reports<span class="by">Basel Institute on Governance</span></span><span class="yr">2026</span><span class="ok">✓ Completed</span></div>
+          <div class="doc"><span class="t">Azure Fundamentals (AZ-900)<span class="by">DataCamp</span></span><span class="yr">2026</span><span class="ok">✓ Completed</span></div>
+          <div class="doc"><span class="t">Business Analysis &amp; Process Management<span class="by">Coursera</span></span><span class="yr">2026</span><span class="ok">✓ Completed</span></div>
+          <div class="doc"><span class="t">MSc Data Analytics<span class="by">Dublin Business School</span></span><span class="yr">2024</span><span class="ok">✓ Awarded</span></div>
+          <div class="doc"><span class="t">Executive PG Programme in Data Science<span class="by">IIIT Bangalore</span></span><span class="yr">2023</span><span class="ok">✓ Awarded</span></div>
+          <div class="doc"><span class="t">BE Mechatronics<span class="by">Acharya Institute of Technology, Bengaluru</span></span><span class="yr">2017</span><span class="ok">✓ Awarded</span></div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <section class="decision" id="decision">
+    <div>
+      <span class="label">07 · Analyst decision</span>
+      <h2>Approve. <span>Connect.</span></h2>
+      <p>If you are hiring for fraud, risk, compliance or data analytics roles in fintech, banking or Trust &amp; Safety, the next step is a conversation.</p>
+    </div>
+    <div class="actions">
+      <a class="btn primary" href="https://www.linkedin.com/in/rithwik-manjunath">Connect on LinkedIn <span class="k">→</span></a>
+      <button class="btn" type="button" id="copy-email">Copy email <span class="k" id="copy-k">rithwikm7@gmail.com</span></button>
+    </div>
+  </section>
+
+  <div class="small-print label">
+    <span>This file was prepared by the subject. All figures come from his own work history.</span>
+    <span>Rithwik Manjunath · 2026</span>
+  </div>
+
+</article>
+
+<script>
+(function () {
+  var btn = document.getElementById('copy-email');
+  var k = document.getElementById('copy-k');
+  btn.addEventListener('click', function () {
+    var addr = 'rithwikm7@gmail.com';
+    try {
+      navigator.clipboard.writeText(addr).then(function () {
+        k.textContent = 'Copied';
+        setTimeout(function () { k.textContent = addr; }, 1800);
+      }, function () { k.textContent = addr; });
+    } catch (e) { k.textContent = addr; }
+  });
+})();
+</script>
+</body>
+</html>
